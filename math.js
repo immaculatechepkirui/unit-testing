@@ -18,8 +18,27 @@ function divide(a, b) {
  module.exports = { add, subtract, multiply, divide };
 
 
- function isEven(num) {
-    return num % 2 === 0;
+ 
+
+function fizzBuzz(num) {
+    if (num % 3 === 0 && num % 5 === 0) return 'FizzBuzz';
+    if (num % 3 === 0) return 'Fizz';
+    if (num % 5 === 0) return 'Buzz';
+    return num.toString();
 }
+
+module.exports = fizzBuzz;
+
+
+
+
+
+
+
+function isValidEmail(email) {
+    return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
+
+module.exports = isValidEmail;
 
 
